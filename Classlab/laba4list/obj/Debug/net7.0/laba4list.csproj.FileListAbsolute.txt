@@ -1,0 +1,15 @@
+D:\gitt\main\Classlab\laba4list\bin\Debug\net7.0\laba4list.exe
+D:\gitt\main\Classlab\laba4list\bin\Debug\net7.0\laba4list.deps.json
+D:\gitt\main\Classlab\laba4list\bin\Debug\net7.0\laba4list.runtimeconfig.json
+D:\gitt\main\Classlab\laba4list\bin\Debug\net7.0\laba4list.dll
+D:\gitt\main\Classlab\laba4list\bin\Debug\net7.0\laba4list.pdb
+D:\gitt\main\Classlab\laba4list\obj\Debug\net7.0\laba4list.csproj.AssemblyReference.cache
+D:\gitt\main\Classlab\laba4list\obj\Debug\net7.0\laba4list.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitt\main\Classlab\laba4list\obj\Debug\net7.0\laba4list.AssemblyInfoInputs.cache
+D:\gitt\main\Classlab\laba4list\obj\Debug\net7.0\laba4list.AssemblyInfo.cs
+D:\gitt\main\Classlab\laba4list\obj\Debug\net7.0\laba4list.csproj.CoreCompileInputs.cache
+D:\gitt\main\Classlab\laba4list\obj\Debug\net7.0\laba4list.dll
+D:\gitt\main\Classlab\laba4list\obj\Debug\net7.0\refint\laba4list.dll
+D:\gitt\main\Classlab\laba4list\obj\Debug\net7.0\laba4list.pdb
+D:\gitt\main\Classlab\laba4list\obj\Debug\net7.0\laba4list.genruntimeconfig.cache
+D:\gitt\main\Classlab\laba4list\obj\Debug\net7.0\ref\laba4list.dll
