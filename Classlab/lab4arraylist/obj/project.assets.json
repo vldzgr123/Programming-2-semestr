@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\gitt\\main\\dmat\\floyd\\laba4list.csproj",
-      "projectName": "laba4list",
-      "projectPath": "D:\\gitt\\main\\dmat\\floyd\\laba4list.csproj",
+      "projectUniqueName": "D:\\gitt\\main\\Classlab\\lab4arraylist\\lab4arraylist.csproj",
+      "projectName": "lab4arraylist",
+      "projectPath": "D:\\gitt\\main\\Classlab\\lab4arraylist\\lab4arraylist.csproj",
       "packagesPath": "C:\\Users\\vlad\\.nuget\\packages\\",
-      "outputPath": "D:\\gitt\\main\\dmat\\floyd\\obj\\",
+      "outputPath": "D:\\gitt\\main\\Classlab\\lab4arraylist\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vlad\\AppData\\Roaming\\NuGet\\NuGet.Config"

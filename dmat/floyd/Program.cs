@@ -1,11 +1,11 @@
 ﻿Console.WriteLine("Введите кол-во вершин:");
-int n=Int32.Parse(Console.ReadLine());
+int n=Convert.ToInt32(Console.ReadLine());
 double [,] matr=new double[n,n];
 Console.WriteLine("Ввод элементов матрицы:");
 for (int i = 0; i < n; i++)
 {
     for (int j = 0; j < n; j++){
-        matr[i,j]=Int32.Parse(Console.ReadLine());
+        matr[i,j]=Convert.ToDouble(Console.ReadLine());
         if (matr[i,j]==0){
             matr[i,j]=double.PositiveInfinity;
         }
