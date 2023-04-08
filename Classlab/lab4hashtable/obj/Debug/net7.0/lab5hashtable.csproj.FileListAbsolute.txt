@@ -1,0 +1,5 @@
+D:\gitt\main\Classlab\lab4hashtable\obj\Debug\net7.0\lab5hashtable.csproj.AssemblyReference.cache
+D:\gitt\main\Classlab\lab4hashtable\obj\Debug\net7.0\lab5hashtable.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitt\main\Classlab\lab4hashtable\obj\Debug\net7.0\lab5hashtable.AssemblyInfoInputs.cache
+D:\gitt\main\Classlab\lab4hashtable\obj\Debug\net7.0\lab5hashtable.AssemblyInfo.cs
+D:\gitt\main\Classlab\lab4hashtable\obj\Debug\net7.0\lab5hashtable.csproj.CoreCompileInputs.cache

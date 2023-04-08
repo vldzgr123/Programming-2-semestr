@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\gitt\\main\\Classlab\\lab5hashtable\\lab5hashtable.csproj": {}
+    "D:\\gitt\\main\\Classlab\\lab4hashtable\\lab5hashtable.csproj": {}
   },
   "projects": {
-    "D:\\gitt\\main\\Classlab\\lab5hashtable\\lab5hashtable.csproj": {
+    "D:\\gitt\\main\\Classlab\\lab4hashtable\\lab5hashtable.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\gitt\\main\\Classlab\\lab5hashtable\\lab5hashtable.csproj",
+        "projectUniqueName": "D:\\gitt\\main\\Classlab\\lab4hashtable\\lab5hashtable.csproj",
         "projectName": "lab5hashtable",
-        "projectPath": "D:\\gitt\\main\\Classlab\\lab5hashtable\\lab5hashtable.csproj",
+        "projectPath": "D:\\gitt\\main\\Classlab\\lab4hashtable\\lab5hashtable.csproj",
         "packagesPath": "C:\\Users\\vlad\\.nuget\\packages\\",
-        "outputPath": "D:\\gitt\\main\\Classlab\\lab5hashtable\\obj\\",
+        "outputPath": "D:\\gitt\\main\\Classlab\\lab4hashtable\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vlad\\AppData\\Roaming\\NuGet\\NuGet.Config"
