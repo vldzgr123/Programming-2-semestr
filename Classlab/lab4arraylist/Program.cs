@@ -139,6 +139,7 @@ while(true){
             foreach(var f in lst){
                 Console.Write(f+" ");
             }
+            Console.WriteLine("");
             Console.WriteLine("=======================================================");
             Console.WriteLine("");
         break;

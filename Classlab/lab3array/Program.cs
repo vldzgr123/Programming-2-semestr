@@ -115,6 +115,7 @@ while(true){
             foreach(var f in mas){
                 Console.Write(f+" ");
             }
+            Console.WriteLine("");
             Console.WriteLine("=======================================================");
             Console.WriteLine("");
         break;
