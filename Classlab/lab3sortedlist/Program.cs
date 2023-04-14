@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-Hashtable tabl = new Hashtable();
+SortedList tabl = new SortedList();
 Console.WriteLine("Введите ключ и элементы (через пробел):");
 while (true)
 {
