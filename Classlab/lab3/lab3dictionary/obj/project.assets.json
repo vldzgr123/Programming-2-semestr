@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\gitt\\main\\Classlab\\lab3dictionary\\lab3dictionary.csproj",
+      "projectUniqueName": "D:\\gitt\\main\\Classlab\\lab3\\lab3dictionary\\lab3dictionary.csproj",
       "projectName": "lab3dictionary",
-      "projectPath": "D:\\gitt\\main\\Classlab\\lab3dictionary\\lab3dictionary.csproj",
+      "projectPath": "D:\\gitt\\main\\Classlab\\lab3\\lab3dictionary\\lab3dictionary.csproj",
       "packagesPath": "C:\\Users\\vlad\\.nuget\\packages\\",
-      "outputPath": "D:\\gitt\\main\\Classlab\\lab3dictionary\\obj\\",
+      "outputPath": "D:\\gitt\\main\\Classlab\\lab3\\lab3dictionary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vlad\\AppData\\Roaming\\NuGet\\NuGet.Config"
