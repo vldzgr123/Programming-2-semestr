@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\gitt\\main\\classlab\\lab3list\\lab3list.csproj",
+      "projectUniqueName": "D:\\gitt\\main\\Classlab\\lab3list\\lab3list.csproj",
       "projectName": "lab3list",
-      "projectPath": "D:\\gitt\\main\\classlab\\lab3list\\lab3list.csproj",
+      "projectPath": "D:\\gitt\\main\\Classlab\\lab3list\\lab3list.csproj",
       "packagesPath": "C:\\Users\\vlad\\.nuget\\packages\\",
-      "outputPath": "D:\\gitt\\main\\classlab\\lab3list\\obj\\",
+      "outputPath": "D:\\gitt\\main\\Classlab\\lab3list\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vlad\\AppData\\Roaming\\NuGet\\NuGet.Config"

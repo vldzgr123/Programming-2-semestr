@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\gitt\\main\\Classlab\\lab4arraylist\\lab4arraylist.csproj": {}
+    "D:\\gitt\\main\\Classlab\\lab3arraylist\\lab4arraylist.csproj": {}
   },
   "projects": {
-    "D:\\gitt\\main\\Classlab\\lab4arraylist\\lab4arraylist.csproj": {
+    "D:\\gitt\\main\\Classlab\\lab3arraylist\\lab4arraylist.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\gitt\\main\\Classlab\\lab4arraylist\\lab4arraylist.csproj",
+        "projectUniqueName": "D:\\gitt\\main\\Classlab\\lab3arraylist\\lab4arraylist.csproj",
         "projectName": "lab4arraylist",
-        "projectPath": "D:\\gitt\\main\\Classlab\\lab4arraylist\\lab4arraylist.csproj",
+        "projectPath": "D:\\gitt\\main\\Classlab\\lab3arraylist\\lab4arraylist.csproj",
         "packagesPath": "C:\\Users\\vlad\\.nuget\\packages\\",
-        "outputPath": "D:\\gitt\\main\\Classlab\\lab4arraylist\\obj\\",
+        "outputPath": "D:\\gitt\\main\\Classlab\\lab3arraylist\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vlad\\AppData\\Roaming\\NuGet\\NuGet.Config"
