@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\gitt\\prima\\home\\dmat\\prima\\prima.csproj": {}
+    "D:\\gitt\\main\\dmat\\prima\\prima.csproj": {}
   },
   "projects": {
-    "D:\\gitt\\prima\\home\\dmat\\prima\\prima.csproj": {
+    "D:\\gitt\\main\\dmat\\prima\\prima.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\gitt\\prima\\home\\dmat\\prima\\prima.csproj",
+        "projectUniqueName": "D:\\gitt\\main\\dmat\\prima\\prima.csproj",
         "projectName": "prima",
-        "projectPath": "D:\\gitt\\prima\\home\\dmat\\prima\\prima.csproj",
+        "projectPath": "D:\\gitt\\main\\dmat\\prima\\prima.csproj",
         "packagesPath": "C:\\Users\\vlad\\.nuget\\packages\\",
-        "outputPath": "D:\\gitt\\prima\\home\\dmat\\prima\\obj\\",
+        "outputPath": "D:\\gitt\\main\\dmat\\prima\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vlad\\AppData\\Roaming\\NuGet\\NuGet.Config"
