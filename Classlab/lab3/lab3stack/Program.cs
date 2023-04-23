@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 while(true){
+    Console.WriteLine("1.Меню с методами");
+    Console.WriteLine("2.Проверка правильности ввода скобок");
+    Console.WriteLine("3.Выход");
     int n=Convert.ToInt32(Console.ReadLine());
-    if (n==3) break;
-    if (n<1 && n>3){
-        Console.WriteLine("1.Меню с методами");
-        Console.WriteLine("2.Проверка правильности ввода скобок");
-        Console.WriteLine("3.Выход");
+    if (n==3){
+       break; 
+    }
+    if (n>0 && n<4){
         switch(n){
             case 1:
                 Console.Clear();
@@ -13,11 +15,12 @@ while(true){
                 break;
             case 2:
                 Console.Clear();
+                proverka();
                 break;
         }
         
     }
-    else break;
+    else Console.WriteLine("Ошибка!");
 }
 
 static void menumethod(){
@@ -140,5 +143,44 @@ static void method(){
     }
 }
 static void proverka(){
-    
+    Console.WriteLine("Введите строку:");
+    var lst=new Dictionary<char,char>(){
+        {'{','}'},
+        {'[',']'},
+        {'(',')'}
+    };
+    string str=Console.ReadLine();
+    var stc=new Stack<char>();
+    var strmas=str.ToCharArray();
+    for(int i=0;i<strmas.Length;i++){
+        if (lst.ContainsKey(strmas[i])){
+            stc.Push(strmas[i]);
+            for (int j=i+1;j<strmas.Length;j++){
+                if (lst.ContainsValue(strmas[j]) && lst[strmas[i]]==strmas[j]){
+                    stc.Push(strmas[j]);
+                    strmas[j]='0';
+                    break;
+                }
+            }
+        }
+        if (lst.ContainsValue(strmas[i])) stc.Push(strmas[i]);
+    }
+    bool check=true;
+    char tmp,tmk;
+    while (stc.Count!=0){
+        tmp=stc.Pop();
+        tmk=stc.Pop();
+        try{
+            if (lst[tmk]!=tmp){
+                check=false;
+                break;
+        }
+        }
+        catch{
+            check=false;
+            break;
+        }
+    }
+    Console.WriteLine(check);
+    Console.WriteLine("=======================================================");
 }
