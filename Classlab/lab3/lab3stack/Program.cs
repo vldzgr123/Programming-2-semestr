@@ -144,43 +144,30 @@ static void method(){
 }
 static void proverka(){
     Console.WriteLine("Введите строку:");
-    var lst=new Dictionary<char,char>(){
+    var dict=new Dictionary<char,char>(){
         {'{','}'},
         {'[',']'},
         {'(',')'}
     };
     string str=Console.ReadLine();
     var stc=new Stack<char>();
-    var strmas=str.ToCharArray();
-    for(int i=0;i<strmas.Length;i++){
-        if (lst.ContainsKey(strmas[i])){
-            stc.Push(strmas[i]);
-            for (int j=i+1;j<strmas.Length;j++){
-                if (lst.ContainsValue(strmas[j]) && lst[strmas[i]]==strmas[j]){
-                    stc.Push(strmas[j]);
-                    strmas[j]='0';
+    bool check=true;
+    foreach(char c in str){
+        if  (dict.ContainsKey(c)){
+            stc.Push(c);
+        }
+        if (dict.ContainsValue(c)){
+            if (stc.TryPop(out var st)){
+                if (dict[st]!=c){
+                    check=false;
                     break;
                 }
             }
-        }
-        if (lst.ContainsValue(strmas[i])) stc.Push(strmas[i]);
-    }
-    bool check=true;
-    char tmp,tmk;
-    while (stc.Count!=0){
-        tmp=stc.Pop();
-        tmk=stc.Pop();
-        try{
-            if (lst[tmk]!=tmp){
+            else{
                 check=false;
                 break;
-        }
-        }
-        catch{
-            check=false;
-            break;
+            }
         }
     }
     Console.WriteLine(check);
-    Console.WriteLine("=======================================================");
 }
