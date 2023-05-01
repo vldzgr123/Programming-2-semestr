@@ -1,0 +1,15 @@
+D:\gitt\main\dmat\deikstra\obj\Debug\net7.0\deikstra.csproj.AssemblyReference.cache
+D:\gitt\main\dmat\deikstra\obj\Debug\net7.0\deikstra.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitt\main\dmat\deikstra\obj\Debug\net7.0\deikstra.AssemblyInfoInputs.cache
+D:\gitt\main\dmat\deikstra\obj\Debug\net7.0\deikstra.AssemblyInfo.cs
+D:\gitt\main\dmat\deikstra\obj\Debug\net7.0\deikstra.csproj.CoreCompileInputs.cache
+D:\gitt\main\dmat\deikstra\bin\Debug\net7.0\deikstra.exe
+D:\gitt\main\dmat\deikstra\bin\Debug\net7.0\deikstra.deps.json
+D:\gitt\main\dmat\deikstra\bin\Debug\net7.0\deikstra.runtimeconfig.json
+D:\gitt\main\dmat\deikstra\bin\Debug\net7.0\deikstra.dll
+D:\gitt\main\dmat\deikstra\bin\Debug\net7.0\deikstra.pdb
+D:\gitt\main\dmat\deikstra\obj\Debug\net7.0\deikstra.dll
+D:\gitt\main\dmat\deikstra\obj\Debug\net7.0\refint\deikstra.dll
+D:\gitt\main\dmat\deikstra\obj\Debug\net7.0\deikstra.pdb
+D:\gitt\main\dmat\deikstra\obj\Debug\net7.0\deikstra.genruntimeconfig.cache
+D:\gitt\main\dmat\deikstra\obj\Debug\net7.0\ref\deikstra.dll
