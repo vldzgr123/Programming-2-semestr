@@ -1,0 +1,16 @@
+CREATE TABLE "users" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"username"	TEXT NOT NULL UNIQUE,
+	"password"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+CREATE TABLE "todos" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"nameAlbum"	TEXT NOT NULL,
+	"nameAuthor"	TEXT,
+	"priority"	INTEGER NOT NULL DEFAULT 2,
+	"userId"	INTEGER NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT),
+	FOREIGN KEY("userId") REFERENCES "users"("id")
+);
