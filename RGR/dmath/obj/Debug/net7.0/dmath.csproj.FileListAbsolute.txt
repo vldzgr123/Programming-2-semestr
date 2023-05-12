@@ -1,0 +1,15 @@
+D:\gitt\main\RGR\dmath\bin\Debug\net7.0\dmath.exe
+D:\gitt\main\RGR\dmath\bin\Debug\net7.0\dmath.deps.json
+D:\gitt\main\RGR\dmath\bin\Debug\net7.0\dmath.runtimeconfig.json
+D:\gitt\main\RGR\dmath\bin\Debug\net7.0\dmath.dll
+D:\gitt\main\RGR\dmath\bin\Debug\net7.0\dmath.pdb
+D:\gitt\main\RGR\dmath\obj\Debug\net7.0\dmath.csproj.AssemblyReference.cache
+D:\gitt\main\RGR\dmath\obj\Debug\net7.0\dmath.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitt\main\RGR\dmath\obj\Debug\net7.0\dmath.AssemblyInfoInputs.cache
+D:\gitt\main\RGR\dmath\obj\Debug\net7.0\dmath.AssemblyInfo.cs
+D:\gitt\main\RGR\dmath\obj\Debug\net7.0\dmath.csproj.CoreCompileInputs.cache
+D:\gitt\main\RGR\dmath\obj\Debug\net7.0\dmath.dll
+D:\gitt\main\RGR\dmath\obj\Debug\net7.0\refint\dmath.dll
+D:\gitt\main\RGR\dmath\obj\Debug\net7.0\dmath.pdb
+D:\gitt\main\RGR\dmath\obj\Debug\net7.0\dmath.genruntimeconfig.cache
+D:\gitt\main\RGR\dmath\obj\Debug\net7.0\ref\dmath.dll
