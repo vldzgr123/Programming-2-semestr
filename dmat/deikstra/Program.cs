@@ -1,16 +1,13 @@
 ﻿
 List<versh> vershini=new List<versh>();
 List<smeg> rebra=new List<smeg>();
-
+string vers="";
 Console.WriteLine("Введите вершины:");
 while(true){
-
-    string str=Console.ReadLine();
-    if (str=="")
-        break;
-    versh s=new versh();
-    s.name=str;
-    vershini.Add(s);
+    versh ver=new versh();
+    ver.name=Console.ReadLine();
+    if (ver.name=="") break;
+    vershini.Add(ver);
 }
 Console.WriteLine("Введите ребра:");
 StreamReader str2=new StreamReader("1.txt");
@@ -19,13 +16,44 @@ while(true){
     string? str1=str2.ReadLine();
     if (str1=="0") break;
     string[] ans= str1.Split(" ");
-    s.ver1=ans[0];
-    s.ver2=ans[1];
+    string ver1=ans[0];
+    string ver2=ans[1];
+    if (!vers.Contains(ver1)||!vers.Contains(ver2)){
+        if(!vers.Contains(ver2)&&!vers.Contains(ver1)){
+            foreach(versh i in vershini){
+                if (i.name==ver2){
+                    s.ver2=i;
+                    vers+=i.name;
+                }
+                if (i.name==ver1){
+                    s.ver1=i;
+                    vers+=i.name;
+                }
+            }
+        }
+        if(!vers.Contains(ver1)&&vers.Contains(ver2)){
+            foreach(versh i in vershini){
+                if (i.name==ver1){
+                    s.ver1=i;
+                    vers+=i.name;
+                    break;
+                }
+            }
+        }
+        if(!vers.Contains(ver2)&&vers.Contains(ver1)){
+            foreach(versh i in vershini){
+                if (i.name==ver2){
+                    s.ver2=i;
+                    vers+=i.name;
+                    break;
+                }
+            }
+        }
+    }
     s.ves=Convert.ToDouble(ans[2]);
     rebra.Add(s);
 }
 str2.Close();
-string ver="";
 Console.WriteLine("Введите от какой вершины:");
 string ot=Console.ReadLine();
 Console.WriteLine("Введите до какой вершины");
@@ -33,43 +61,55 @@ string to=Console.ReadLine();
 Algorithm(rebra,vershini,ot,to);
 
 static void Algorithm(List<smeg> rebra, List<versh> vershini, string ot, string to){
-    versh tmp=new versh();
-    tmp.name=ot;
-    tmp.minput=double.PositiveInfinity;
-    for(int i=0;i<rebra.Count;i++) {
-        foreach (versh vershina in vershini){
-            if (vershina.name==ot){
-                vershina.check=false;
-                continue;
-            }
-            if (vershina.check==false){
-                foreach (smeg rebro in rebra){
-                    if(rebro.ver1.Contains(vershina.name) && rebro.ver2.Contains(tmp.name) || rebro.ver1.Contains(tmp.name) && rebro.ver2.Contains(vershina.name)){
-                        if (rebro.ves<vershina.minput){
-                            vershina.minput=rebro.ves;
-                        }
-                        if (vershina.minput<tmp.minput){
-                            tmp.minput=vershina.minput;
-                            tmp.name=vershina.name;
-                        }
-                    }
+    int toid=0;
+    double put=0;
+    for(int i=0;i<vershini.Count;i++)
+    {
+        if(i==0){
+            for(int k=0;k<vershini.Count;k++){
+                if (vershini[k].name==ot){
+                    vershini[k].minput=0;
+                    vershini[k].check=true;
                 }
-                foreach (var c in vershini)
-                {
-                    if (tmp.name==c.name) c.check=false;
+                if (vershini[k].name==to){
+                    toid=k;
                 }
             }
         }
+        else{
+            for(int k=0;k<rebra.Count;k++){
+                if (ot.Contains(rebra[k].ver1.name) || ot.Contains(rebra[k].ver2.name)){
+                    if(ot.Contains(rebra[k].ver1.name)){
+                        if (rebra[k].ver2.check==false) rebra[k].ver2.minput=Math.Min(rebra[k].ver2.minput,rebra[k].ves+rebra[k].ver1.minput);
+                    }
+                    else{
+                        if (rebra[k].ver2.check==false) rebra[k].ver1.minput=Math.Min(rebra[k].ver1.minput,rebra[k].ves+rebra[k].ver2.minput);
+                    }
+                }
+            }
+            double tmp=double.PositiveInfinity;
+            int minid=0;
+            for (int k=0;k<vershini.Count;k++){
+                if (tmp>vershini[k].minput && vershini[k].check==false){
+                    minid=k;
+                    tmp=vershini[k].minput;
+                }
+            }
+            if (vershini[minid].name==to){
+                Console.WriteLine(vershini[minid].minput);
+                break;
+            }
+            else{
+                vershini[minid].check=true;
+                ot=vershini[minid].name;
+            }
+        }
     }
-    foreach(versh vers in vershini){
-        if (vers.name==to) Console.WriteLine(vers.minput);
-    }
-    Console.WriteLine(vershini);
 }
 class smeg
 {
-    public string ver1;
-    public string ver2;
+    public versh ver1;
+    public versh ver2;
     public double ves;
 }
 class versh
