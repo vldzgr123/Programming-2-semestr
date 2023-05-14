@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace CodeTest
+namespace kubikrubika
 {
     internal class Program
     {
