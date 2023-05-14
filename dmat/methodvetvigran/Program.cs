@@ -185,8 +185,6 @@ namespace ConsoleApp12
                 Console.WriteLine(absmin);
             }
             int ffs = int.MaxValue;
-
-            Console.ReadLine();
         }
 
     }
