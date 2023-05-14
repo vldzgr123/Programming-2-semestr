@@ -1,0 +1,15 @@
+D:\gitt\main\Dmat\methodvetvigran\bin\Debug\net7.0\methodvetvigran.exe
+D:\gitt\main\Dmat\methodvetvigran\bin\Debug\net7.0\methodvetvigran.deps.json
+D:\gitt\main\Dmat\methodvetvigran\bin\Debug\net7.0\methodvetvigran.runtimeconfig.json
+D:\gitt\main\Dmat\methodvetvigran\bin\Debug\net7.0\methodvetvigran.dll
+D:\gitt\main\Dmat\methodvetvigran\bin\Debug\net7.0\methodvetvigran.pdb
+D:\gitt\main\Dmat\methodvetvigran\obj\Debug\net7.0\methodvetvigran.csproj.AssemblyReference.cache
+D:\gitt\main\Dmat\methodvetvigran\obj\Debug\net7.0\methodvetvigran.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitt\main\Dmat\methodvetvigran\obj\Debug\net7.0\methodvetvigran.AssemblyInfoInputs.cache
+D:\gitt\main\Dmat\methodvetvigran\obj\Debug\net7.0\methodvetvigran.AssemblyInfo.cs
+D:\gitt\main\Dmat\methodvetvigran\obj\Debug\net7.0\methodvetvigran.csproj.CoreCompileInputs.cache
+D:\gitt\main\Dmat\methodvetvigran\obj\Debug\net7.0\methodvetvigran.dll
+D:\gitt\main\Dmat\methodvetvigran\obj\Debug\net7.0\refint\methodvetvigran.dll
+D:\gitt\main\Dmat\methodvetvigran\obj\Debug\net7.0\methodvetvigran.pdb
+D:\gitt\main\Dmat\methodvetvigran\obj\Debug\net7.0\methodvetvigran.genruntimeconfig.cache
+D:\gitt\main\Dmat\methodvetvigran\obj\Debug\net7.0\ref\methodvetvigran.dll
