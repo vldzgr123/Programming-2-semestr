@@ -1,0 +1,15 @@
+D:\gitt\main\RGR\alg\bin\Debug\net7.0\alg.exe
+D:\gitt\main\RGR\alg\bin\Debug\net7.0\alg.deps.json
+D:\gitt\main\RGR\alg\bin\Debug\net7.0\alg.runtimeconfig.json
+D:\gitt\main\RGR\alg\bin\Debug\net7.0\alg.dll
+D:\gitt\main\RGR\alg\bin\Debug\net7.0\alg.pdb
+D:\gitt\main\RGR\alg\obj\Debug\net7.0\alg.csproj.AssemblyReference.cache
+D:\gitt\main\RGR\alg\obj\Debug\net7.0\alg.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitt\main\RGR\alg\obj\Debug\net7.0\alg.AssemblyInfoInputs.cache
+D:\gitt\main\RGR\alg\obj\Debug\net7.0\alg.AssemblyInfo.cs
+D:\gitt\main\RGR\alg\obj\Debug\net7.0\alg.csproj.CoreCompileInputs.cache
+D:\gitt\main\RGR\alg\obj\Debug\net7.0\alg.dll
+D:\gitt\main\RGR\alg\obj\Debug\net7.0\refint\alg.dll
+D:\gitt\main\RGR\alg\obj\Debug\net7.0\alg.pdb
+D:\gitt\main\RGR\alg\obj\Debug\net7.0\alg.genruntimeconfig.cache
+D:\gitt\main\RGR\alg\obj\Debug\net7.0\ref\alg.dll
