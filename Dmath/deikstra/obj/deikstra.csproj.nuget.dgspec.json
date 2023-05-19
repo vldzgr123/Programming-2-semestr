@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\gitt\\main\\Dmat\\deikstra\\deikstra.csproj": {}
+    "D:\\gitt\\main\\Dmath\\deikstra\\deikstra.csproj": {}
   },
   "projects": {
-    "D:\\gitt\\main\\Dmat\\deikstra\\deikstra.csproj": {
+    "D:\\gitt\\main\\Dmath\\deikstra\\deikstra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\gitt\\main\\Dmat\\deikstra\\deikstra.csproj",
+        "projectUniqueName": "D:\\gitt\\main\\Dmath\\deikstra\\deikstra.csproj",
         "projectName": "deikstra",
-        "projectPath": "D:\\gitt\\main\\Dmat\\deikstra\\deikstra.csproj",
+        "projectPath": "D:\\gitt\\main\\Dmath\\deikstra\\deikstra.csproj",
         "packagesPath": "C:\\Users\\vlad\\.nuget\\packages\\",
-        "outputPath": "D:\\gitt\\main\\Dmat\\deikstra\\obj\\",
+        "outputPath": "D:\\gitt\\main\\Dmath\\deikstra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vlad\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,65 +1,80 @@
-﻿List<Rebro> rebra=new List<Rebro>();
-string vershini="";
-int count=0;
+﻿using deikstra;
+
+var ribrs=new List<Ribr>();
+var peaks=new List<Peak>();
+
+var streamReader=new StreamReader("1.txt");
+
+Console.WriteLine("Введите вершины:");//ввод вершин
+while (true){
+    string str=Console.ReadLine();
+    if (str=="") break;
+    var peak=new Peak();
+    peak.name=str;
+    peaks.Add(peak);
+}
+
+Console.WriteLine("Введите ребра:");//ввод ребер
 while(true){
-    string reb1=Console.ReadLine();
-    string[] reb=reb1.Split(" ");
-    var rebro=new Rebro();
-    if (reb1=="") break;
-    if (!vershini.Contains(reb[0])) vershini+=reb[0];
-    if (!vershini.Contains(reb[1])) vershini+=reb[1];
-    rebro.ver1=reb[0];
-    rebro.ver2=reb[1];
-    rebro.ves=Convert.ToInt32(reb[2]);
-    count=Math.Max(count,Convert.ToInt32(reb[2]));
-    rebra.Add(rebro);
-}
-var valuever=new int[vershini.Length]; 
-for (int i = 0; i < valuever.Length; i++)
-{
-    valuever[i]=1*count;
-}
-int ot=Convert.ToInt32(Console.ReadLine())-1;
-int too=Convert.ToInt32(Console.ReadLine())-1;
-string start=Convert.ToString(ot+1);
-for (int i=0;i<valuever.Length;i++){
-    for(int j=0;j<rebra.Count;j++){
-        if(rebra[j].ver1==Convert.ToString(ot+1) && rebra[j].ver2==Convert.ToString(i+1)){
-            valuever[i]=rebra[j].ves;
+    string str=streamReader.ReadLine();
+    if (str=="0") break;
+    Ribr ribr=new Ribr();
+    string peak1=str.Split(" ")[0];
+    string peak2=str.Split(" ")[1];
+    double weight=Convert.ToInt32(str.Split(" ")[2]);
+    foreach(var peak in peaks){
+        if (peak.name==peak1){
+            ribr.peak1=peak;
+        }
+        if (peak.name==peak2){
+            ribr.peak2=peak;
         }
     }
+    ribr.weight=weight;
+    ribrs.Add(ribr);
 }
-int minimumValue=count;
-int minVer=0;
-for (int i=0;i<valuever.Length;i++){
-    if (valuever[i]<minimumValue && !start.Contains(Convert.ToString(i+1))){
-        minimumValue=valuever[i];
-        minVer=i;
-    }
-}
-ot=minVer;
-while (ot!=0){
-    start+=Convert.ToString(ot+1);
-    for(int i=0;i<valuever.Length;i++){
-        for(int j=0;j<rebra.Count;j++){
-            if(rebra[j].ver1==Convert.ToString(ot+1) &&rebra[j].ver2==Convert.ToString(i+1)){
-                valuever[i]=Math.Min(rebra[j].ves+valuever[ot],valuever[i]);
+
+Console.WriteLine("Введите от какой веришины и до какой вершины нужно найти минимальный путь:");
+string start=Console.ReadLine();
+string finish=Console.ReadLine();
+
+Peak tmpPeak=new Peak();
+
+for(int i=0;i<peaks.Count;i++){
+    if (i==0){//нахождение начальной вершины
+        foreach(var peak in peaks){
+            if (peak.name==start){
+                peak.check=true;
+                peak.weightMinimal=0;
+                tmpPeak=peak;
+                break;
             }
         }
     }
-    minimumValue=count;
-    minVer=0;
-    for (int i=0;i<valuever.Length;i++){
-        if(valuever[i]<minimumValue && !start.Contains(Convert.ToString(i+1))){
-            minimumValue=valuever[i];
-            minVer=i;
+    else{
+        foreach(var ribr in ribrs){//минимальный пути до каждой вершины
+            if (ribr.peak1.name==tmpPeak.name || ribr.peak2.name==tmpPeak.name){
+                if (ribr.peak1.name==tmpPeak.name){
+                    ribr.peak2.weightMinimal=Math.Min(ribr.peak1.weightMinimal+ribr.weight,ribr.peak2.weightMinimal);
+                }
+                if (ribr.peak2.name==tmpPeak.name){
+                    ribr.peak1.weightMinimal=Math.Min(ribr.peak2.weightMinimal+ribr.weight,ribr.peak1.weightMinimal);
+                }
+            }
         }
+        double tmp=double.PositiveInfinity;
+        int tmpid=0;
+        for(int j=0;j<peaks.Count;j++){
+            if (tmp>peaks[j].weightMinimal &&peaks[j].check==false){
+                tmp=peaks[j].weightMinimal;
+                tmpid=j;
+            }
+        }
+        if (peaks[tmpid].name==finish){
+            Console.WriteLine($"Кратчайший путь до вершины {start} - {peaks[tmpid].weightMinimal}");
+            break;
+        }
+        peaks[tmpid].check=true;
+        tmpPeak=peaks[tmpid];
     }
-    ot=minVer;
-}
-Console.WriteLine(valuever[too]);
-class Rebro{
-    public string ver1;
-    public string ver2;
-    public int ves;
 }

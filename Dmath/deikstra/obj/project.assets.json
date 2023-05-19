@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\gitt\\main\\dmat\\deikstra\\deikstra.csproj",
+      "projectUniqueName": "D:\\gitt\\main\\Dmath\\deikstra\\deikstra.csproj",
       "projectName": "deikstra",
-      "projectPath": "D:\\gitt\\main\\dmat\\deikstra\\deikstra.csproj",
+      "projectPath": "D:\\gitt\\main\\Dmath\\deikstra\\deikstra.csproj",
       "packagesPath": "C:\\Users\\vlad\\.nuget\\packages\\",
-      "outputPath": "D:\\gitt\\main\\dmat\\deikstra\\obj\\",
+      "outputPath": "D:\\gitt\\main\\Dmath\\deikstra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vlad\\AppData\\Roaming\\NuGet\\NuGet.Config",
