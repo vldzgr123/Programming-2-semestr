@@ -1,0 +1,15 @@
+D:\gitt\main\Dmath\fordfalcerson\bin\Debug\net7.0\fordfalcerson.exe
+D:\gitt\main\Dmath\fordfalcerson\bin\Debug\net7.0\fordfalcerson.deps.json
+D:\gitt\main\Dmath\fordfalcerson\bin\Debug\net7.0\fordfalcerson.runtimeconfig.json
+D:\gitt\main\Dmath\fordfalcerson\bin\Debug\net7.0\fordfalcerson.dll
+D:\gitt\main\Dmath\fordfalcerson\bin\Debug\net7.0\fordfalcerson.pdb
+D:\gitt\main\Dmath\fordfalcerson\obj\Debug\net7.0\fordfalcerson.csproj.AssemblyReference.cache
+D:\gitt\main\Dmath\fordfalcerson\obj\Debug\net7.0\fordfalcerson.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitt\main\Dmath\fordfalcerson\obj\Debug\net7.0\fordfalcerson.AssemblyInfoInputs.cache
+D:\gitt\main\Dmath\fordfalcerson\obj\Debug\net7.0\fordfalcerson.AssemblyInfo.cs
+D:\gitt\main\Dmath\fordfalcerson\obj\Debug\net7.0\fordfalcerson.csproj.CoreCompileInputs.cache
+D:\gitt\main\Dmath\fordfalcerson\obj\Debug\net7.0\fordfalcerson.dll
+D:\gitt\main\Dmath\fordfalcerson\obj\Debug\net7.0\refint\fordfalcerson.dll
+D:\gitt\main\Dmath\fordfalcerson\obj\Debug\net7.0\fordfalcerson.pdb
+D:\gitt\main\Dmath\fordfalcerson\obj\Debug\net7.0\fordfalcerson.genruntimeconfig.cache
+D:\gitt\main\Dmath\fordfalcerson\obj\Debug\net7.0\ref\fordfalcerson.dll
