@@ -11,11 +11,11 @@ namespace ConsoleApp12
         static void Main(string[] args)
         {
             int absmin = 0;
-            int[,] matrix = { { -1, 6, 4, 8, 7 },
-                              { 6, -1, 7, 11, 7 },
-                              { 4, 7, -1, 4, 3 },
-                              { 8, 11, 4, -1, 5 },
-                              { 7, 7, 3, 5, -1 } };
+            int[,] matrix = { { -1, 6, 2, 8, 7 },
+                              { 6, -1, 7, 13, 1 },
+                              { 2, 7, -1, 4, 3 },
+                              { 8, 13, 4, -1, 5 },
+                              { 7, 1, 3, 5, -1 } };
 
             for (int p = 0; p < matrix.GetLength(0) - 1; p++)
             {

@@ -34,72 +34,86 @@ foreach(var peak in peaks){
     if (sourceCheck==true && stockCheck==false) source=Convert.ToString(peak);
     if (sourceCheck==false && stockCheck==true) stock=Convert.ToString(peak);
 }
-double maxValueFlow=0;
+
+
+double maxAllFlow=0;
 while(true){
-    var ids=new List<int>();
+    var ribrsId = new Dictionary<int,int>();
     double minFlow=double.PositiveInfinity;
     string peakNow=source;
-    while(true){
-        double maxPeak=0;
-        int ribrId=0;
-        for(int i=0;i<ribrs.Count();i++){
-            if (peakNow==ribrs[i].peak1 && ribrs[i].weight!=0 && ribrs[i].check==true){
-                if(maxPeak<ribrs[i].weight){
-                    maxPeak=ribrs[i].weight;
-                    ribrId=i;
+    if (checkSource(source,ribrs)){
+        while(peakNow!=stock){
+            var idsBack=new List<int>();
+            int direction=0;
+            double maxWeight=0;
+            int id=-10;
+            for(int i=0;i<ribrs.Count();i++){
+                if (ribrs[i].peak1==peakNow && ribrs[i].weight>0 && !idsBack.Contains(i)){
+                    if(maxWeight<ribrs[i].weight){
+                        id=i;
+                        maxWeight=ribrs[i].weight;
+                        direction=1;
+                    }
+                }
+                else if (ribrs[i].peak2==peakNow && ribrs[i].weight==0 && !idsBack.Contains(i) && Check(ribrs[i].peak2,ribrs,stock)){
+                    if(maxWeight<ribrs[i].weight){
+                        id=i;
+                        maxWeight=ribrs[i].weight;
+                        direction=-1;
+                    }
                 }
             }
+            if (id==-10){
+                break;
+            }
+            if(direction==1){
+                peakNow=ribrs[id].peak2;
+            }
+            if(direction==-1){
+                peakNow=ribrs[id].peak1;
+            }
+            if (!Check(peakNow,ribrs,stock)){
+                idsBack.Add(id);
+                if(direction==1){
+                    peakNow=ribrs[id].peak1;
+                }
+                if(direction==-1){
+                    peakNow=ribrs[id].peak2;
+                }
+                continue;
+            }
+            minFlow=Math.Min(minFlow,maxWeight);
+            ribrsId.Add(id,direction);
         }
-        minFlow=Math.Min(minFlow,maxPeak);
-        peakNow=ribrs[ribrId].peak2;
-        ids.Add(ribrId);
-        if (peakNow==stock) break;
-        if (!Check(peakNow,ribrs)) ribrs[ids[ids.Count()-1]].check=false;
-        if(!Check(source,ribrs)) break;
+        foreach(var ribrId in ribrsId){
+            if (ribrId.Value==1){
+                ribrs[ribrId.Key].weight-=minFlow;
+                ribrs[ribrId.Key].weightOst+=minFlow;
+            }
+            if (ribrId.Value==-1){
+                ribrs[ribrId.Key].weight+=minFlow;
+                ribrs[ribrId.Key].weightOst-=minFlow;
+            }
+        }
+        maxAllFlow+=minFlow;
     }
-    if(!Check(source,ribrs)){
+    else{
         break;
     }
-    maxValueFlow+=minFlow;
-    for(int i=0;i<ids.Count();i++){
-        ribrs[ids[i]].weight-=minFlow;
-        ribrs[ids[i]].weightOst+=minFlow;
-    }
 }
-Console.WriteLine(maxValueFlow);
+Console.WriteLine(maxAllFlow);
 
-
-// while (true){
-//     string tmp=source;
-//     var ids=new List<int>();
-//     double maxValue=double.PositiveInfinity;
-//     while(true){
-//         maxValue=double.PositiveInfinity;
-//         ids.Clear();
-//         tmp=source;
-//         for (int i=0;i<ribrs.Count();i++){
-//             if(ribrs[i].peak1==tmp && ribrs[i].weight!=0 && ribrs[i].check!=false){
-//                 tmp=ribrs[i].peak2;
-//                 maxValue=Math.Min(maxValue,ribrs[i].weight);
-//                 ids.Add(i);
-//             }
-//             if (tmp==stock) break;
-//         }
-//         if(!Check(source,ribrs)) break;
-//         if (tmp!=stock) ribrs[ids[ids.Count()-1]].check=false;
-//         if(tmp==stock) break;
-//     }
-//     if (tmp!=stock) break;
-//     maxValueFlow+=maxValue;
-//     foreach(var id in ids){
-//         ribrs[id].weight-=maxValue;
-//     }
-// }
-Console.WriteLine(maxValueFlow);
-
-static bool Check(string peak,List<Ribr> ribrs){
+static bool Check(string peak,List<Ribr> ribrs,string stock){
     foreach(var ribr in ribrs){
-        if (ribr.peak1==peak && (ribr.check==true&&ribr.weight!=0)) return true;
+        if (ribr.peak1==peak && ribr.weight!=0) return true;
+        if (ribr.peak2==peak && ribr.weightOst!=0) return true;
+        if (ribr.peak2==stock) return true;
+    }
+    return false;
+}
+static bool checkSource(string source,List<Ribr> ribrs){
+    foreach(var ribr in ribrs){
+        if (ribr.peak1==source && ribr.weight!=0 ) return true; 
     }
     return false;
 }
