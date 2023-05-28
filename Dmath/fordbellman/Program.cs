@@ -1,4 +1,4 @@
-﻿﻿double[,] array = new double[5, 5] {
+﻿﻿double[,] originalMartrix = new double[5, 5] {
 {double.PositiveInfinity, 1.0, double.PositiveInfinity, double.PositiveInfinity, 3.0 },
 {double.PositiveInfinity, double.PositiveInfinity, 8.0, 7.0,1.0},
 {double.PositiveInfinity, double.PositiveInfinity, 8.0, 7.0, 1.0 },
@@ -36,7 +36,7 @@ for (int k = 1; k < 5; k++)
         {
             for (int j = 0; j < 5; j++)
             {
-                matrix[i, k] = double.Min(matrix[i, k], matrix[j, k - 1] + array[j, i]);
+                matrix[i, k] = double.Min(matrix[i, k], matrix[j, k - 1] + originalMartrix[j, i]);
             }
         }
     }
