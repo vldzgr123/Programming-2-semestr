@@ -15,7 +15,7 @@ var cars=new List<Car>();
 cars.Add(car1);
 cars.Add(car2);
 cars.Add(car3);
-var sameMark=cars.GroupBy(x=>x.mark);// группировка машин по марке
+var sameMark=from x in cars group x by x.mark;// группировка машин по марке
 foreach(var x in sameMark){
     Console.WriteLine(x.Key+ ":");
     foreach(var car in x){
@@ -41,7 +41,7 @@ owner4.name="аллАн";
 
 var owners=new List<Owner>{ owner1,owner2,owner3,owner4 };
 
-var sameIdCarOwner=owners.GroupBy(x=>x.idCar);// группировка владельцев по id машины
+var sameIdCarOwner=from x in owners group x by x.idCar;// группировка владельцев по id машины
 
 foreach(var group in sameIdCarOwner){
     Console.WriteLine(group.Key+":");
