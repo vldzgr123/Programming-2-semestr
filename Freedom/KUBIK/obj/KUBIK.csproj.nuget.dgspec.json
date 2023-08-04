@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\gitt\\main\\Freedom\\KUBIK\\KUBIK.csproj": {}
+    "C:\\Users\\vlszg\\OneDrive\\Рабочий стол\\repositories\\main\\Freedom\\KUBIK\\KUBIK.csproj": {}
   },
   "projects": {
-    "D:\\gitt\\main\\Freedom\\KUBIK\\KUBIK.csproj": {
+    "C:\\Users\\vlszg\\OneDrive\\Рабочий стол\\repositories\\main\\Freedom\\KUBIK\\KUBIK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\gitt\\main\\Freedom\\KUBIK\\KUBIK.csproj",
+        "projectUniqueName": "C:\\Users\\vlszg\\OneDrive\\Рабочий стол\\repositories\\main\\Freedom\\KUBIK\\KUBIK.csproj",
         "projectName": "KUBIK",
-        "projectPath": "D:\\gitt\\main\\Freedom\\KUBIK\\KUBIK.csproj",
-        "packagesPath": "C:\\Users\\vlad\\.nuget\\packages\\",
-        "outputPath": "D:\\gitt\\main\\Freedom\\KUBIK\\obj\\",
+        "projectPath": "C:\\Users\\vlszg\\OneDrive\\Рабочий стол\\repositories\\main\\Freedom\\KUBIK\\KUBIK.csproj",
+        "packagesPath": "C:\\Users\\vlszg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vlszg\\OneDrive\\Рабочий стол\\repositories\\main\\Freedom\\KUBIK\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vlad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\vlszg\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

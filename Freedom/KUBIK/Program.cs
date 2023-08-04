@@ -12,61 +12,38 @@ for (int i = 0; i < M; i++)
     string A = strn[0];
     int K = Int32.Parse(strn[1]);
     string S = strn[2];
-    if (A == "X")
-    {
-    }
-    if (A == "Y")
-    {
-    }
-    if (A == "Z")
-    {
-        if (K == ZN)
-        {
-            if (S == "-1")
-            {
-                if (XN == 1 && YN == 1 || XN == N && YN == N)
-                {
-                    if (XN == 1 && YN == 1)
-                    {
-                        XN = N;
-                        YN = 1;
-                    }
-                    else
-                    {
-                        XN = 1;
-                        YN = N;
-                    }
-                    continue;
-                }
-                else
-                {
-                    if (XN == 1 || YN == 1)
-                    {
-                        if (XN == 1)
-                        {
-                            XN = YN;
-                            YN = 1;
-                        }
-                        if (YN == 1)
-                        {
-                            YN = XN;
-                            XN = N;
-                        }
-                    }
-                    if (XN == N || YN = N)
-                    {
-
-                    }
-                }
-            }
-            else
-            {
-
-            }
-        }
-        else continue;
-    }
+    ChangePositions(XN, YN, ZN, A, K, S);
 }
 streamReader.Close();
 Console.WriteLine(XN + " " + YN + " " + ZN);
 
+void ChangePositions()
+{
+    if Check(int XN, int YN, int ZN, string A, int K){
+        if (S == "1")
+        {
+
+        }
+        if (S == "-1")
+        {
+
+        }
+    }
+}
+
+bool Check(int XN, int YN, int ZN, string A, int K)
+{
+    if (A = "X" && XN == K)
+    {
+        return true;
+    }
+    if (A = "Y" && YN == K)
+    {
+        return true;
+    }
+    if (A = "Z" && ZN == K)
+    {
+        return true;
+    }
+    return false;
+}
