@@ -3,3 +3,8 @@ C:\Users\vlszg\OneDrive\Рабочий стол\repositories\main\Freedom\KUBIK\
 C:\Users\vlszg\OneDrive\Рабочий стол\repositories\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.AssemblyInfoInputs.cache
 C:\Users\vlszg\OneDrive\Рабочий стол\repositories\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.AssemblyInfo.cs
 C:\Users\vlszg\OneDrive\Рабочий стол\repositories\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.csproj.CoreCompileInputs.cache
+C:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.csproj.AssemblyReference.cache
+C:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.GeneratedMSBuildEditorConfig.editorconfig
+C:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.AssemblyInfoInputs.cache
+C:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.AssemblyInfo.cs
+C:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.csproj.CoreCompileInputs.cache

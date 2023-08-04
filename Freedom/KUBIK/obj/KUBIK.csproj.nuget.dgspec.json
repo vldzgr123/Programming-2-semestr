@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vlszg\\OneDrive\\Рабочий стол\\repositories\\main\\Freedom\\KUBIK\\KUBIK.csproj": {}
+    "C:\\reps\\main\\Freedom\\KUBIK\\KUBIK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vlszg\\OneDrive\\Рабочий стол\\repositories\\main\\Freedom\\KUBIK\\KUBIK.csproj": {
+    "C:\\reps\\main\\Freedom\\KUBIK\\KUBIK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vlszg\\OneDrive\\Рабочий стол\\repositories\\main\\Freedom\\KUBIK\\KUBIK.csproj",
+        "projectUniqueName": "C:\\reps\\main\\Freedom\\KUBIK\\KUBIK.csproj",
         "projectName": "KUBIK",
-        "projectPath": "C:\\Users\\vlszg\\OneDrive\\Рабочий стол\\repositories\\main\\Freedom\\KUBIK\\KUBIK.csproj",
+        "projectPath": "C:\\reps\\main\\Freedom\\KUBIK\\KUBIK.csproj",
         "packagesPath": "C:\\Users\\vlszg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vlszg\\OneDrive\\Рабочий стол\\repositories\\main\\Freedom\\KUBIK\\obj\\",
+        "outputPath": "C:\\reps\\main\\Freedom\\KUBIK\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vlszg\\AppData\\Roaming\\NuGet\\NuGet.Config"
