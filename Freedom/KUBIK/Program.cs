@@ -15,7 +15,7 @@ for (int i = 0; i < M; i++)
     ChangePosition(A, K, S);
 }
 input.Close();
-var output=new StreamWriter("output.txt");
+var output = new StreamWriter("output.txt");
 output.WriteLine(XN + " " + YN + " " + ZN);
 output.Close();
 
@@ -40,7 +40,7 @@ void ChangePosition(string A, int K, string S)
             if (A == "Z")
             {
                 int bYN = YN;
-                YN = N - YN + 1;
+                YN = N - XN + 1;
                 XN = bYN;
             }
         }
@@ -61,7 +61,7 @@ void ChangePosition(string A, int K, string S)
             if (A == "Z")
             {
                 int bXN = XN;
-                XN = N - XN + 1;
+                XN = N - YN + 1;
                 YN = bXN;
             }
         }
