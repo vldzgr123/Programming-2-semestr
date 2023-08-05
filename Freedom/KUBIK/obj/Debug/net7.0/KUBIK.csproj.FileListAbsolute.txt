@@ -8,3 +8,13 @@ C:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.GeneratedMSBuildEditorConfig.e
 C:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.AssemblyInfoInputs.cache
 C:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.AssemblyInfo.cs
 C:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.csproj.CoreCompileInputs.cache
+c:\reps\main\Freedom\KUBIK\bin\Debug\net7.0\KUBIK.exe
+c:\reps\main\Freedom\KUBIK\bin\Debug\net7.0\KUBIK.deps.json
+c:\reps\main\Freedom\KUBIK\bin\Debug\net7.0\KUBIK.runtimeconfig.json
+c:\reps\main\Freedom\KUBIK\bin\Debug\net7.0\KUBIK.dll
+c:\reps\main\Freedom\KUBIK\bin\Debug\net7.0\KUBIK.pdb
+c:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.dll
+c:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\refint\KUBIK.dll
+c:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.pdb
+c:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\KUBIK.genruntimeconfig.cache
+c:\reps\main\Freedom\KUBIK\obj\Debug\net7.0\ref\KUBIK.dll
