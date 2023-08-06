@@ -1,0 +1,15 @@
+c:\reps\main\Freedom\tau\obj\Debug\net7.0\tau.csproj.AssemblyReference.cache
+c:\reps\main\Freedom\tau\obj\Debug\net7.0\tau.GeneratedMSBuildEditorConfig.editorconfig
+c:\reps\main\Freedom\tau\obj\Debug\net7.0\tau.AssemblyInfoInputs.cache
+c:\reps\main\Freedom\tau\obj\Debug\net7.0\tau.AssemblyInfo.cs
+c:\reps\main\Freedom\tau\obj\Debug\net7.0\tau.csproj.CoreCompileInputs.cache
+c:\reps\main\Freedom\tau\bin\Debug\net7.0\tau.exe
+c:\reps\main\Freedom\tau\bin\Debug\net7.0\tau.deps.json
+c:\reps\main\Freedom\tau\bin\Debug\net7.0\tau.runtimeconfig.json
+c:\reps\main\Freedom\tau\bin\Debug\net7.0\tau.dll
+c:\reps\main\Freedom\tau\bin\Debug\net7.0\tau.pdb
+c:\reps\main\Freedom\tau\obj\Debug\net7.0\tau.dll
+c:\reps\main\Freedom\tau\obj\Debug\net7.0\refint\tau.dll
+c:\reps\main\Freedom\tau\obj\Debug\net7.0\tau.pdb
+c:\reps\main\Freedom\tau\obj\Debug\net7.0\tau.genruntimeconfig.cache
+c:\reps\main\Freedom\tau\obj\Debug\net7.0\ref\tau.dll
