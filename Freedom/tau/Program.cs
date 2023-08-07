@@ -47,4 +47,3 @@ string NewWord(string word)
     }
     return String.Join("", newWordArray);
 }
-
