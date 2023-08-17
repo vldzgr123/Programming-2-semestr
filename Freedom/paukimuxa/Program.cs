@@ -17,7 +17,7 @@ if (Sx == Fx && (Sx == a || Sx == 0) || Sy == Fy && (Sy == b || Sy == 0) || Sz =
 {
     output.WriteLine(sameWall());
 }
-else if ((Sx - Fx == 0 || Fx - Sx == 0) || (Sy - Fy == 0 || Fy - Sy == 0) || (Sz - Fz == 0 || Fz - Sz == 0))
+else if ((Math.Abs(Sx - Fx) == a) || Math.Abs(Sy - Fy) == b || Math.Abs(Sz - Fz) == c)
 {
     output.WriteLine(oppositeWalls());
 }
@@ -25,26 +25,72 @@ else
 {
     output.WriteLine(relatedWalls());
 }
-
-
-
-
 output.Close();
-
-
-
-
 double sameWall()
 {
     return Math.Round(Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sy - Fy, 2) + Math.Pow(Sz - Fz, 2)), 3);
 }
 double relatedWalls()
 {
-    return Math.Round(Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sy - Fy, 2) + Math.Pow(Sz - Fz, 2)), 3);
+    double minimumDistance;
+    if (Sx == a || Sx == 0)
+    {
+        if (Fy == b || Fy == 0)
+        {
+            minimumDistance = Math.Min(Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(0 - Fy, 2) + Math.Pow(Sz - Fz, 2)) + Sy, Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(b - Fy, 2) + Math.Pow(Sz - Fz, 2)) + b - Sy);
+        }
+        else
+        {
+            minimumDistance = Math.Min(Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sy - Fy, 2) + Math.Pow(0 - Fz, 2)) + Sz, Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sy - Fy, 2) + Math.Pow(c - Fz, 2)) + c - Sz);
+        }
+    }
+    else if (Sy == b || Sy == 0)
+    {
+        if (Fx == a || Fx == 0)
+        {
+            minimumDistance = Math.Min(Math.Sqrt(Math.Pow(0 - Fx, 2) + Math.Pow(Sy - Fy, 2) + Math.Pow(Sz - Fz, 2)) + Sx, Math.Sqrt(Math.Pow(a - Fx, 2) + Math.Pow(b - Fy, 2) + Math.Pow(Sz - Fz, 2)) + a - Sx);
+        }
+        else
+        {
+            minimumDistance = Math.Min(Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sy - Fy, 2) + Math.Pow(0 - Fz, 2)) + Sz, Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sy - Fy, 2) + Math.Pow(c - Fz, 2)) + c - Sz);
+        }
+    }
+    else
+    {
+        if (Fx == a || Fx == 0)
+        {
+            minimumDistance = Math.Min(Math.Sqrt(Math.Pow(0 - Fx, 2) + Math.Pow(Sy - Fy, 2) + Math.Pow(Sz - Fz, 2)) + Sx, Math.Sqrt(Math.Pow(a - Fx, 2) + Math.Pow(b - Fy, 2) + Math.Pow(Sz - Fz, 2)) + a - Sx);
+        }
+        else
+        {
+            minimumDistance = Math.Min(Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sy - Fy, 2) + Math.Pow(0 - Fz, 2)) + Sz, Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sy - Fy, 2) + Math.Pow(c - Fz, 2)) + c - Sz);
+        }
+    }
+    return Math.Round(minimumDistance, 3);
 }
 double oppositeWalls()
 {
-    double minimumDistance = Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sy - Fy, 2) + Math.Pow(Sz - Fz, 2));
-    minimumDistance += Math.Min(Math.Min((a - Sx) + (a - Fx), Sx + Fx),Math.Min(Math.Min ((b - Sy) + (b - Fy), Sy + Fy), Math.Min((c - Sz) + (c - Fz), Sz + Fz)));
-    return Math.Round(minimumDistance,3);
+    double minimumDistance;
+    double minimumDistanceX;
+    double minimumDistanceY;
+    double minimumDistanceZ;
+    if (Math.Abs(Sx - Fx) == a)
+    {
+        minimumDistanceY = Math.Min(Math.Sqrt(Math.Pow((-(b - Sy) + Sx) - (b - Fy - Fx), 2) + Math.Pow(Sz - Fz, 2)), Math.Sqrt(Math.Pow(Sx - Sy - (Fx + Fy), 2) + Math.Pow(Sz - Fz, 2)));
+        minimumDistanceZ = Math.Min(Math.Sqrt(Math.Pow((-(c - Sz) + Sx) - (Fx + (c - Fz)), 2) + Math.Pow(Sy - Fy, 2)), Math.Sqrt(Math.Pow(Sx + Sz - (Fx - Fz), 2) + Math.Pow(Sy - Fy, 2)));
+        minimumDistance = Math.Min(minimumDistanceY, minimumDistanceZ);
+    }
+    else if (Math.Abs(Sy - Fy) == b)
+    {
+        minimumDistanceX = Math.Min(Math.Sqrt(Math.Pow((Sy - (a - Sx)) - (Fy + (a - Fx)), 2) + Math.Pow(Sz - Fz, 2)), Math.Sqrt(Math.Pow((Sy - Sx) - (Fy + Fx), 2) + Math.Pow(Sz - Fz, 2)));
+        minimumDistanceZ = Math.Min(Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sy - Fy, 2)) + (c - Sz) + (c - Fz), Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sy - Sz - (Fy + Fz), 2)));
+        minimumDistance = Math.Min(minimumDistanceX, minimumDistanceZ);
+    }
+    else
+    {
+        minimumDistanceX = Math.Min(Math.Sqrt(Math.Pow(Sy - Fy, 2) + Math.Pow(Sz - (a - Sx) - (Fz + (a - Fx)), 2)), Math.Sqrt(Math.Pow(Sy - Fy, 2) + Math.Pow(Sz - Sx - (Fz + Fx), 2)));
+        minimumDistanceY = Math.Min(Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sz - (b - Sy) - (Fz + (b - Fy)), 2)), Math.Sqrt(Math.Pow(Sx - Fx, 2) + Math.Pow(Sz - Sy - (Fz + Fy), 2)));
+        minimumDistance = Math.Min(minimumDistanceY, minimumDistanceX);
+    }
+    return Math.Round(minimumDistance, 3);
 }

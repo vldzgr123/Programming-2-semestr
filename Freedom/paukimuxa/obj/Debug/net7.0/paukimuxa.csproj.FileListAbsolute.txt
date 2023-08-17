@@ -1,0 +1,15 @@
+C:\reps\main\Freedom\paukimuxa\bin\Debug\net7.0\paukimuxa.exe
+C:\reps\main\Freedom\paukimuxa\bin\Debug\net7.0\paukimuxa.deps.json
+C:\reps\main\Freedom\paukimuxa\bin\Debug\net7.0\paukimuxa.runtimeconfig.json
+C:\reps\main\Freedom\paukimuxa\bin\Debug\net7.0\paukimuxa.dll
+C:\reps\main\Freedom\paukimuxa\bin\Debug\net7.0\paukimuxa.pdb
+C:\reps\main\Freedom\paukimuxa\obj\Debug\net7.0\paukimuxa.csproj.AssemblyReference.cache
+C:\reps\main\Freedom\paukimuxa\obj\Debug\net7.0\paukimuxa.GeneratedMSBuildEditorConfig.editorconfig
+C:\reps\main\Freedom\paukimuxa\obj\Debug\net7.0\paukimuxa.AssemblyInfoInputs.cache
+C:\reps\main\Freedom\paukimuxa\obj\Debug\net7.0\paukimuxa.AssemblyInfo.cs
+C:\reps\main\Freedom\paukimuxa\obj\Debug\net7.0\paukimuxa.csproj.CoreCompileInputs.cache
+C:\reps\main\Freedom\paukimuxa\obj\Debug\net7.0\paukimuxa.dll
+C:\reps\main\Freedom\paukimuxa\obj\Debug\net7.0\refint\paukimuxa.dll
+C:\reps\main\Freedom\paukimuxa\obj\Debug\net7.0\paukimuxa.pdb
+C:\reps\main\Freedom\paukimuxa\obj\Debug\net7.0\paukimuxa.genruntimeconfig.cache
+C:\reps\main\Freedom\paukimuxa\obj\Debug\net7.0\ref\paukimuxa.dll
